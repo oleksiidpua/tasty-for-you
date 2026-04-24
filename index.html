@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="uk" data-lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Кафе Tasty for You у Тернополі — смачна їжа та кава на автовокзалі. Шаурма, піца, паніні, гарячі напої.">
+  <title>Tasty for You | Кафе у Тернополі</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══════════ NAVIGATION ═══════════ -->
+  <header id="header">
+    <nav class="nav-container">
+      <a class="logo" href="#hero">Tasty for You</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"><span class="uk">Про нас</span><span class="en">About Us</span></a></li>
+        <li><a href="#menu"><span class="uk">Меню</span><span class="en">Menu</span></a></li>
+        <li><a href="#gallery"><span class="uk">Галерея</span><span class="en">Gallery</span></a></li>
+        <li><a href="#contacts"><span class="uk">Контакти</span><span class="en">Contacts</span></a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="tel:+380674368458" class="nav-phone">☎ (067) 436-84-58</a>
+        <button class="lang-btn" id="langBtn" aria-label="Switch language">EN</button>
+        <button class="hamburger" id="hamburger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section id="hero">
+    <div class="hero-bg" style="background-image: url('Files/Фото кафе.jpeg')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-pretitle">
+        <span class="uk">Кафе на автовокзалі • Тернопіль</span>
+        <span class="en">Café at the Bus Station • Ternopil</span>
+      </p>
+      <h1 class="hero-title">Tasty for You</h1>
+      <p class="hero-slogan">
+        <span class="uk">Зупинись. Скуштуй. Насолодись.</span>
+        <span class="en">Stop. Taste. Enjoy.</span>
+      </p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary">
+          <span class="uk">Переглянути меню</span><span class="en">View Menu</span>
+        </a>
+        <a href="#contacts" class="btn btn-outline">
+          <span class="uk">Як нас знайти</span><span class="en">Find Us</span>
+        </a>
+      </div>
+    </div>
+    <div class="embroidery-stripe"></div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="embroidery-badge"></div>
+        <h2><span class="uk">Про нас</span><span class="en">About Us</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">
+            <span class="uk">Маленьке затишне кафе в серці транспортного вузла Тернополя</span>
+            <span class="en">A cozy little café in the heart of Ternopil's transport hub</span>
+          </p>
+          <p>
+            <span class="uk">Ми знаходимось прямо біля автовокзалу, на вході в ринок «Юмакс» — ідеальне місце для мандрівників і всіх, хто поспішає, але хоче поїсти смачно.</span>
+            <span class="en">Located right at the bus station, at the entrance to «Yumax» market — the perfect spot for travelers and anyone who wants a tasty meal on the go.</span>
+          </p>
+          <p>
+            <span class="uk">Гаряча кава, свіжа випічка, ситна шаурма та апетитна піца — все це чекає на вас кожного дня, крім понеділка, з 9:00 до 16:00.</span>
+            <span class="en">Hot coffee, fresh pastries, hearty shawarma and delicious pizza — all waiting for you every day except Monday, from 9:00 to 16:00.</span>
+          </p>
+          <div class="about-features">
+            <div class="feature">
+              <span class="feature-icon">☕</span>
+              <div><span class="uk">Свіжа кава</span><span class="en">Fresh Coffee</span></div>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">🥙</span>
+              <div><span class="uk">Гаряча їжа</span><span class="en">Hot Food</span></div>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">🕘</span>
+              <div><span class="uk">Вт–Нд 9:00–16:00</span><span class="en">Tue–Sun 9:00–16:00</span></div>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">📍</span>
+              <div><span class="uk">Автовокзал</span><span class="en">Bus Station</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-image">
+          <img src="Files/Фото кафе.jpeg" alt="Кафе Tasty for You">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ MENU ═══════════ -->
+  <section id="menu" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="embroidery-badge light"></div>
+        <h2><span class="uk">Наше меню</span><span class="en">Our Menu</span></h2>
+        <div class="section-divider light"></div>
+      </div>
+      <div class="menu-filters" id="menuFilters"></div>
+      <div class="menu-categories" id="menuCategories"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════ GALLERY ═══════════ -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="embroidery-badge"></div>
+        <h2><span class="uk">Галерея</span><span class="en">Gallery</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item--large">
+          <img src="Files/Фото кафе.jpeg" alt="Кафе Tasty for You" loading="lazy">
+          <div class="gallery-caption"><span class="uk">Наше кафе</span><span class="en">Our Café</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="Files/Піца.jpeg" alt="Піца" loading="lazy">
+          <div class="gallery-caption"><span class="uk">Піца</span><span class="en">Pizza</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="Files/Шаурма.jpeg" alt="Шаурма" loading="lazy">
+          <div class="gallery-caption"><span class="uk">Шаурма</span><span class="en">Shawarma</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="Files/Паніні.jpeg" alt="Паніні" loading="lazy">
+          <div class="gallery-caption"><span class="uk">Паніні</span><span class="en">Panini</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="Files/Хот-дог французьский.jpeg" alt="Хот-дог" loading="lazy">
+          <div class="gallery-caption"><span class="uk">Хот-дог</span><span class="en">Hot Dog</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="Files/Бургер в лаваші.jpeg" alt="Бургер в лаваші" loading="lazy">
+          <div class="gallery-caption"><span class="uk">Бургер в лаваші</span><span class="en">Burger in Lavash</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="Files/WhatsApp Image 2026-04-20 at 19.37.26.jpeg" alt="Страви кафе" loading="lazy">
+          <div class="gallery-caption"><span class="uk">Наші страви</span><span class="en">Our Dishes</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACTS ═══════════ -->
+  <section id="contacts" class="section section-warm">
+    <div class="container">
+      <div class="section-header">
+        <div class="embroidery-badge"></div>
+        <h2><span class="uk">Контакти</span><span class="en">Contacts</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="contacts-grid">
+        <div class="contacts-info">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <h3><span class="uk">Адреса</span><span class="en">Address</span></h3>
+              <p><span class="uk">м. Тернопіль, вул. Оболоня, 2</span><span class="en">2 Obolonya St., Ternopil</span></p>
+              <p class="contact-note">
+                <span class="uk">Кіоск на вході в ринок «Юмакс» зі сторони в'їзду в автовокзал</span>
+                <span class="en">Kiosk at the «Yumax» market entrance, bus station side</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <h3><span class="uk">Телефон</span><span class="en">Phone</span></h3>
+              <a href="tel:+380674368458" class="contact-phone">(067) 436-84-58</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">🕘</span>
+            <div>
+              <h3><span class="uk">Години роботи</span><span class="en">Working Hours</span></h3>
+              <p><span class="uk">Вівторок – Неділя: 9:00 – 16:00</span><span class="en">Tuesday – Sunday: 9:00 – 16:00</span></p>
+              <p><span class="uk">Понеділок: вихідний</span><span class="en">Monday: closed</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contacts-map">
+          <iframe
+            src="https://maps.google.com/maps?q=Obolonia+2+Ternopil+Ukraine&output=embed&z=16"
+            width="100%"
+            height="380"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            title="Карта — Tasty for You">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="footer-embroidery"></div>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Tasty for You</div>
+        <p class="footer-slogan">
+          <span class="uk">Зупинись. Скуштуй. Насолодись.</span>
+          <span class="en">Stop. Taste. Enjoy.</span>
+        </p>
+        <p class="footer-address">
+          <span class="uk">м. Тернопіль, вул. Оболоня, 2 • (067) 436-84-58</span>
+          <span class="en">2 Obolonya St., Ternopil • (067) 436-84-58</span>
+        </p>
+        <p class="footer-copy">
+          © 2025 Tasty for You.
+          <span class="uk">Всі права захищені.</span>
+          <span class="en">All rights reserved.</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Фото">
+    <img id="lightboxImg" src="" alt="">
+  </div>
+
+  <script src="menu.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
