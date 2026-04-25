@@ -32,7 +32,7 @@ const MENU = [
       }
     ],
     extras: {
-      label: { uk: "Начинки на вибір (замовлення по телефону):", en: "Toppings of your choice (order by phone):" },
+      label: { uk: "Начинки на вибір (замовлення за телефоном):", en: "Toppings of your choice (order by phone):" },
       list: {
         uk: ["Сир моцарела", "Баварські ковбаски", "Шинка", "Курка гриль", "Салямі", "Гриби шампіньйони", "Помідор", "Перець болгарський", "Маслини", "Оливки", "Кукурудза"],
         en: ["Mozzarella", "Bavarian sausages", "Ham", "Grilled chicken", "Salami", "Champignon mushrooms", "Tomato", "Bell pepper", "Black olives", "Green olives", "Corn"]

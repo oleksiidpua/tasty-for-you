@@ -597,6 +597,7 @@ html[data-lang="en"] .uk { display: none !important; }
   font-weight: 700;
   color: var(--coffee-medium);
   transition: color var(--ease);
+  white-space: nowrap;
 }
 .contact-phone:hover { color: var(--embroidery-red); }
 
