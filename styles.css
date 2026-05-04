@@ -570,6 +570,124 @@ html[data-lang="en"] .uk { display: none !important; }
 }
 
 /* ============================================================
+   SHARPENING
+   ============================================================ */
+.section-eyebrow {
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--coffee-light);
+  margin-bottom: 8px;
+}
+
+.sharpening-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.sharpening-image {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 4/3;
+  position: relative;
+}
+.sharpening-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 3px solid var(--ukraine-yellow);
+  border-radius: var(--radius);
+  pointer-events: none;
+  opacity: .35;
+}
+.sharpening-image img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+.sharpening-image:hover img { transform: scale(1.04); }
+
+.sharpening-text p {
+  color: var(--text-medium);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+.sharpening-lead {
+  font-family: var(--font-heading);
+  font-size: 1.3rem !important;
+  color: var(--coffee-medium) !important;
+  font-weight: 600;
+  line-height: 1.45 !important;
+  margin-bottom: 18px !important;
+}
+
+.sharpening-prices {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 24px 0 22px;
+}
+.price-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--cream);
+  padding: 16px 20px;
+  border-radius: var(--radius);
+  border-left: 4px solid var(--ukraine-yellow);
+  box-shadow: var(--shadow);
+  transition: transform var(--ease), box-shadow var(--ease);
+}
+.price-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+.price-icon {
+  font-size: 1.9rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.price-info { flex: 1; min-width: 0; }
+.price-info h3 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  color: var(--coffee-medium);
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+.price-note {
+  font-size: .82rem !important;
+  color: var(--text-light) !important;
+  margin-bottom: 0 !important;
+  font-style: italic;
+  line-height: 1.3 !important;
+}
+.price-value {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--embroidery-red);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.sharpening-cta {
+  background: rgba(255, 213, 0, .14);
+  border: 1px dashed rgba(196, 30, 58, .45);
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  font-size: .95rem !important;
+  color: var(--coffee-medium) !important;
+  margin-top: 8px !important;
+}
+.sharpening-cta strong { color: var(--embroidery-red); }
+
+/* ============================================================
    CONTACTS
    ============================================================ */
 .contacts-grid {
@@ -629,8 +747,9 @@ html[data-lang="en"] .uk { display: none !important; }
   color: var(--warm-beige);
   margin-bottom: 14px;
 }
-.footer-address { font-size: .88rem; color: rgba(253,244,232,.55); margin-bottom: 8px; }
-.footer-copy    { font-size: .78rem; color: rgba(253,244,232,.35); }
+.footer-address  { font-size: .88rem; color: rgba(253,244,232,.55); margin-bottom: 8px; }
+.footer-services { font-size: .82rem; color: var(--ukraine-yellow); opacity: .8; margin-bottom: 12px; letter-spacing: .3px; }
+.footer-copy     { font-size: .78rem; color: rgba(253,244,232,.35); }
 
 /* ============================================================
    ANIMATIONS
@@ -655,6 +774,9 @@ html[data-lang="en"] .uk { display: none !important; }
 
   .gallery-grid { grid-template-columns: repeat(2,1fr); grid-auto-rows:200px; }
   .gallery-item--large { grid-column:span 2; grid-row:span 1; }
+
+  .sharpening-grid { grid-template-columns: 1fr; gap: 32px; }
+  .sharpening-image { aspect-ratio: 16/10; max-width: 560px; margin: 0 auto; }
 }
 
 /* ============================================================
@@ -702,4 +824,11 @@ html[data-lang="en"] .uk { display: none !important; }
   .menu-filter-btn { font-size:.76rem; padding:7px 13px; }
   .category-header { flex-direction:column; text-align:center; gap:12px; }
   .menu-item { padding:12px 14px; }
+
+  .sharpening-lead { font-size: 1.15rem !important; }
+  .price-card { padding: 14px 16px; gap: 12px; }
+  .price-icon { font-size: 1.6rem; }
+  .price-info h3 { font-size: .98rem; }
+  .price-value { font-size: 1.1rem; }
+  .sharpening-cta { font-size: .88rem !important; padding: 12px 14px; }
 }
